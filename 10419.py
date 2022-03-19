@@ -1,6 +1,10 @@
-for _ in range(int(input())):
-    n = int(input())
-    t = 0
-    while (t+1) + (t+1)**2 <= n:
-        t += 1
-    print(t)
+t = int(input())
+for _ in range(t):
+    d = int(input())
+    cnt = 0
+    for i in range(101):
+        if i*i+i <= d:
+            cnt = i
+        else:
+            break
+    print(cnt)
